@@ -109,23 +109,46 @@ puts "----"
 
 number_of_bottles = 99
 while number_of_bottles != 0
-  puts "#{number_of_bottles} bottles of beer on the wall, #{number_of_bottles} bottles of beer. Take one down, pass it around, #{number_of_bottles - 1} of beer on the wall."
+  puts "#{number_of_bottles} bottles of beer on the wall, #{number_of_bottles} bottles of beer. Take one down, pass it around, #{number_of_bottles - 1} bottles of beer on the wall."
   number_of_bottles = number_of_bottles - 1
 end
 
-#deaf grandma
+#deaf grandma with extension
 
 puts "What do you want to say to your Grandma?"
-answer = gets.chomp # initilialize to not have infintiel loop
+answer1 = "blah blah blah"
+answer2 = ""
+answer3 = ""
+#initialize 
 
-if answer != answer.upcase
-  puts "HUH?! SPEAK UP, SONNY!"
-else
-  year = rand(1930..1950)
-  puts "NO, NOT SINCE #{year}!"
+while answer1 != "BYE"
+  answer1 = gets.chomp
+  if answer1 != answer1.upcase
+    puts "HUH?! SPEAK UP, SONNY!"
+  else
+    year = rand(1930..1950)
+    puts "NO, NOT SINCE #{year}!"
+  end
 end
 
+while answer2 != "BYE"
+  answer2 = gets.chomp
+  if answer2 != answer2.upcase
+    puts "HUH?! SPEAK UP, SONNY!"
+  else
+    year = rand(1930..1950)
+    puts "NO, NOT SINCE #{year}!"
+  end
+end
 
+while answer3 != "BYE"
+  answer3 = gets.chomp
+  if answer3 != answer3.upcase
+    puts "HUH?! SPEAK UP, SONNY!"
+  else
+    puts "BYE KID. :("
+  end
+end
 
 
 
