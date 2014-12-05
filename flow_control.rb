@@ -107,50 +107,70 @@ puts "----"
 puts "----"
 #99 bottles
 
-number_of_bottles = 99
-while number_of_bottles != 0
-  puts "#{number_of_bottles} bottles of beer on the wall, #{number_of_bottles} bottles of beer. Take one down, pass it around, #{number_of_bottles - 1} bottles of beer on the wall."
-  number_of_bottles = number_of_bottles - 1
-end
+# number_of_bottles = 99
+# while number_of_bottles != 0
+#   puts "#{number_of_bottles} bottles of beer on the wall, #{number_of_bottles} bottles of beer. Take one down, pass it around, #{number_of_bottles - 1} bottles of beer on the wall."
+#   number_of_bottles = number_of_bottles - 1
+# end
 
 #deaf grandma with extension
 
-puts "What do you want to say to your Grandma?"
-answer1 = "blah blah blah"
-answer2 = ""
-answer3 = ""
-#initialize 
+# puts "What do you want to say to your Grandma?"
+# answer1 = "blah blah blah"
+# answer2 = ""
+# answer3 = ""
+# #initialize 
 
-while answer1 != "BYE"
-  answer1 = gets.chomp
-  if answer1 != answer1.upcase
-    puts "HUH?! SPEAK UP, SONNY!"
-  else
-    year = rand(1930..1950)
-    puts "NO, NOT SINCE #{year}!"
+# while answer1 != "BYE"
+#   answer1 = gets.chomp
+#   if answer1 != answer1.upcase
+#     puts "HUH?! SPEAK UP, SONNY!"
+#   else
+#     year = rand(1930..1950)
+#     puts "NO, NOT SINCE #{year}!"
+#   end
+# end
+
+# while answer2 != "BYE"
+#   answer2 = gets.chomp
+#   if answer2 != answer2.upcase
+#     puts "HUH?! SPEAK UP, SONNY!"
+#   else
+#     year = rand(1930..1950)
+#     puts "NO, NOT SINCE #{year}!"
+#   end
+# end
+
+# while answer3 != "BYE"
+#   answer3 = gets.chomp
+#   if answer3 != answer3.upcase
+#     puts "HUH?! SPEAK UP, SONNY!"
+#   else
+#     puts "BYE KID. :("
+#   end
+# end
+
+# Leap Year
+
+puts "Please enter a starting year."
+starting_year = gets.chomp.to_i
+puts "Please enter an ending year."
+ending_year = gets.chomp.to_i
+
+
+while starting_year != ending_year
+  if starting_year % 400 == 0 
+    puts starting_year
+  elsif starting_year % 100 == 0 
+    #skips if there isn't a line of code
+  elsif starting_year % 4 == 0 
+    puts starting_year
+  end
+  
+  starting_year = starting_year + 1
+    
+  if starting_year == ending_year 
+    puts ending_year
+    break
   end
 end
-
-while answer2 != "BYE"
-  answer2 = gets.chomp
-  if answer2 != answer2.upcase
-    puts "HUH?! SPEAK UP, SONNY!"
-  else
-    year = rand(1930..1950)
-    puts "NO, NOT SINCE #{year}!"
-  end
-end
-
-while answer3 != "BYE"
-  answer3 = gets.chomp
-  if answer3 != answer3.upcase
-    puts "HUH?! SPEAK UP, SONNY!"
-  else
-    puts "BYE KID. :("
-  end
-end
-
-
-
-
-
