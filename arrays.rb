@@ -92,7 +92,7 @@ list = []
 
 while word != ""
   word= gets.chomp
-  list = list<< word
+  list<< word
 end
 
 puts "Your inputs:"
